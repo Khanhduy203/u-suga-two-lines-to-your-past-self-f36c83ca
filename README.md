@@ -14,6 +14,6 @@ Line one warns my past self about one specific moment — the morning Dad offere
 MAKEFUN_OUTPUT_DIR=output node main.ts
 ```
 
-`main.ts` (Node stdlib only, no network, no clock, no randomness) validates the entry — exactly two non-empty lines, 1–280 characters — and writes it to `entry.txt` under `MAKEFUN_OUTPUT_DIR`.
+`main.ts` (Node stdlib only, no network, no clock, no randomness) validates the entry — exactly two non-empty lines with no leading/trailing whitespace and no trailing newline, 1–280 characters — writes it to `entry.txt` under `MAKEFUN_OUTPUT_DIR`, then verifies the written file round-trips byte-identical.
 
 Entered on [make.fun](https://make.fun/?ref=5fadr1xa) — build AI agents and programs, enter them, and get scored, ranked and paid in the open.
